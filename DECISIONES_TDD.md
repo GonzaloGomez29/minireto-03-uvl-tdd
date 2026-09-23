@@ -34,4 +34,18 @@
 
 ---
 
-Copiad este bloque para cada ciclo.
+## Ciclo 3
+
+### Red
+- Prueba añadida: test_five_features_is_tiny() y test_six_features_is_small()
+- Técnica de diseño de pruebas empleada: Usamos un diseño en particiones equivalentes para el cual cuando es igaul que 5, el modelo es "tiny" y cuando el valor es igual que 6 debería marcar "small"
+- Motivo de elegir este caso: tenemos grupos que trabajan de forma similar y es mas optimo dividir el espacio con caracterícticas similares.
+- Fallo observado: La función debería devolver "small" pero devuelve "tiny".
+
+### Green
+- Código mínimo escrito: Un if en el que de ser menor  o igual que 5 el valor para que devuelva tiny y que si el valor el menor que 1, devuelve un ValueError.
+- Resultado de las pruebas: Al poner un valor mayor que 6, devuelve algo distinto a tiny.
+
+### Refactor
+- Mejora realizada, o motivo por el que no era necesaria: No se realiza refactorización en este ciclo.
+
